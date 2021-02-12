@@ -1,5 +1,6 @@
 package com.frostphyr.avail;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
@@ -147,6 +148,20 @@ public class ArgumentTest {
 			@Override
 			public void run() throws Throwable {
 				Argument.checkPercent(101);
+			}
+			
+		});
+	}
+	
+	@Test
+	public void testCheckLength() {
+		final int[] array = new int[] {1, 2, 3};
+		assertArrayEquals(array, Argument.checkLength(array, 3));
+		assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
+
+			@Override
+			public void run() throws Throwable {
+				Argument.checkLength(array, 2);
 			}
 			
 		});
