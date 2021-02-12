@@ -6,7 +6,7 @@
   
   <groupId>com.frostphyr</groupId>
   <artifactId>avail</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,11 +16,11 @@
   
   <name>Avail</name>
   <description>Library of general-purpose utilities</description>
-  <url>http://frostphyr.com/avail/java</url>
+  <url>https://frostphyr.com/avail/java/</url>
   
   <organization>
     <name>Frostphyr</name>
-    <url>http://frostphyr.com</url>
+    <url>https://frostphyr.com</url>
   </organization>
   
   <developers>
