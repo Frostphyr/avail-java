@@ -1555,8 +1555,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1566,12 +1567,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static byte[] checkLength(byte[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1583,8 +1585,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1594,12 +1597,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static short[] checkLength(short[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1611,8 +1615,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1622,12 +1627,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static int[] checkLength(int[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1639,8 +1645,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1650,12 +1657,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static long[] checkLength(long[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1667,8 +1675,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1678,12 +1687,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static float[] checkLength(float[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1695,8 +1705,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1706,12 +1717,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static double[] checkLength(double[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1723,8 +1735,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1734,12 +1747,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static char[] checkLength(char[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1751,8 +1765,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1762,12 +1777,13 @@ public final class Argument {
 	 * @since 1.1
 	 */
 	public static boolean[] checkLength(boolean[] array, int length, String message) {
-		return check(array, array.length != length, message);
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1779,8 +1795,9 @@ public final class Argument {
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
@@ -1789,20 +1806,21 @@ public final class Argument {
 	 * @return the same {@code array}
 	 * @since 1.1
 	 */
-	public static Object[] checkLength(Object[] array, int length, String message) {
-		return check(array, array.length != length, message);
+	public static <T> T[] checkLength(T[] array, int length, String message) {
+		return check(array, checkNotNull(array).length != length, message);
 	}
 	
 	/**
-	 * Returns the specified {@code array} if its length equals the specified 
-	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
+	 * Returns the specified {@code array} if it's not {@code null} and its 
+	 * length equals the specified {@code length}, otherwise throws 
+	 * {@link IllegalArgumentException}.
 	 * 
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
 	 * @return the same {@code array}
 	 * @since 1.1
 	 */
-	public static Object[] checkLength(Object[] array, int length) {
+	public static <T> T[] checkLength(T[] array, int length) {
 		return checkLength(array, length, null);
 	}
 	
