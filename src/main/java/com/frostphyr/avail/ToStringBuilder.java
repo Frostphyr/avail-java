@@ -207,7 +207,7 @@ public class ToStringBuilder {
 	 * if it is {@code null}.
 	 * 
 	 * @param name the name of {@code iterable}
-	 * @param map the {@link Iterable} to append
+	 * @param iterable the {@link Iterable} to append
 	 * @return this builder for chaining
 	 * @throws IllegalArgumentException if {@code name} is {@code null}
 	 * @since 1.5

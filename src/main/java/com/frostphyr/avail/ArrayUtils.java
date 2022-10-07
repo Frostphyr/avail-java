@@ -407,7 +407,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}
@@ -488,7 +487,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}
@@ -569,7 +567,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}
@@ -650,7 +647,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}
@@ -731,7 +727,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}
@@ -812,7 +807,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}
@@ -893,7 +887,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}
@@ -974,7 +967,6 @@ public class ArrayUtils {
 	 * fixed size, so any operations that modify the size will throw 
 	 * {@link UnsupportedOperationException}.
 	 * 
-	 * @param <T> the type of {@code array} and the returned {@link List}
 	 * @param array the array to create a {@link List} for
 	 * @return a {@link List} backed by {@code array}
 	 * @throws IllegalArgumentException if {@code array} is {@code null}

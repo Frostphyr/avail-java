@@ -295,8 +295,6 @@ public final class Argument {
 	 * 
 	 * @param value the value to check
 	 * @param number the number that {@code value} must be greater than
-	 * @param epsilon the acceptable margin of error between {@code value} and 
-	 * {@code number} where they will be considered equal
 	 * @param name the name of the argument to be included in the detail 
 	 * message of the {@link IllegalArgumentException} if it is thrown, or 
 	 * {@code null} for no detail message
@@ -2637,6 +2635,7 @@ public final class Argument {
 	 * Returns {@code array} if it's not {@code null} and its length equals 
 	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
 	 * 
+	 * @param <T> the type of array
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
 	 * @param name the name of the argument to be included in the detail 
@@ -2656,6 +2655,7 @@ public final class Argument {
 	 * Returns {@code array} if it's not {@code null} and its length equals 
 	 * {@code length}, otherwise throws {@link IllegalArgumentException}.
 	 * 
+	 * @param <T> the type of array
 	 * @param array the array to check
 	 * @param length the length that {@code array}'s length must equal
 	 * @return the same {@code array}
