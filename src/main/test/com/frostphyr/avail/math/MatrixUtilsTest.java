@@ -6,7 +6,6 @@ import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.junit.function.ThrowingRunnable;
 
 public class MatrixUtilsTest {
 	
@@ -95,14 +94,7 @@ public class MatrixUtilsTest {
 			66, 72, 78
 		}, MatrixUtils.multiply(matrix1x3_1, matrix3x3));
 		
-		assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
-
-			@Override
-			public void run() throws Throwable {
-				MatrixUtils.multiply(matrix1x3_1, matrix2x3_1);
-			}
-			
-		});
+		assertThrows(IllegalArgumentException.class, () -> MatrixUtils.multiply(matrix1x3_1, matrix2x3_1));
 	}
 	
 	@Test
@@ -113,14 +105,7 @@ public class MatrixUtilsTest {
 			{6, 12, 18}
 		}, MatrixUtils.multiply(matrix3x1, matrix1x3_1));
 		
-		assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
-
-			@Override
-			public void run() throws Throwable {
-				MatrixUtils.multiply(matrix3x3, matrix1x3_1);
-			}
-			
-		});
+		assertThrows(IllegalArgumentException.class, () -> MatrixUtils.multiply(matrix3x3, matrix1x3_1));
 	}
 	
 	@Test
@@ -130,14 +115,7 @@ public class MatrixUtilsTest {
 			{156, 171, 186}
 		}, MatrixUtils.multiply(matrix2x3_1, matrix3x3));
 		
-		assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
-
-			@Override
-			public void run() throws Throwable {
-				MatrixUtils.multiply(matrix3x3, matrix2x3_1);
-			}
-			
-		});
+		assertThrows(IllegalArgumentException.class, () -> MatrixUtils.multiply(matrix3x3, matrix2x3_1));
 	}
 	
 	@Test

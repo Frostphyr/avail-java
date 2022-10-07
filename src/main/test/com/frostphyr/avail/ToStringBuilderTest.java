@@ -4,10 +4,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.function.ThrowingRunnable;
 
 public class ToStringBuilderTest {
 	
@@ -21,27 +22,19 @@ public class ToStringBuilderTest {
 	@Test
 	public void testForClassName() {
 		assertEquals("ToStringBuilderTest[]", builder.toString());
-		assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
-
-			@Override
-			public void run() throws Throwable {
-				ToStringBuilder.forClassName(null);
-			}
-			
-		});
+		assertThrows(IllegalArgumentException.class, () -> ToStringBuilder.forClassName(null));
 	}
 	
 	@Test
 	public void testForClass() {
 		assertEquals("ToStringBuilderTest[]", ToStringBuilder.forClass(ToStringBuilderTest.class).toString());
-		assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
-
-			@Override
-			public void run() throws Throwable {
-				ToStringBuilder.forClass(null);
-			}
-			
-		});
+		assertThrows(IllegalArgumentException.class, () -> ToStringBuilder.forClass(null));
+	}
+	
+	@Test
+	public void testForObject() {
+		assertEquals("ToStringBuilderTest[]", ToStringBuilder.forObject(this).toString());
+		assertThrows(IllegalArgumentException.class, () -> ToStringBuilder.forObject(null));
 	}
 	
 	@Test
@@ -51,17 +44,15 @@ public class ToStringBuilderTest {
 		builder.append("name2", "value2")
 				.append("name3", 3)
 				.append("name4", 4L)
-				.append("name5", new String[] {"A", "B", "C"})
-				.append("name6", Arrays.asList("C", "B", "A"));
-		assertEquals("ToStringBuilderTest[name1=null,name2=value2,name3=3,name4=4,name5=[A,B,C],name6=[C,B,A]]", builder.toString());
-		assertThrows(IllegalArgumentException.class, new ThrowingRunnable() {
-
-			@Override
-			public void run() throws Throwable {
-				builder.append(null, "String1");
-			}
-			
-		});
+				.append("name5", false)
+				.append("name6", new String[] {"A", "B", "C"})
+				.append("name7", Arrays.asList("C", "B", "A"));
+		assertEquals("ToStringBuilderTest[name1=null,name2=value2,name3=3,name4=4,name5=false,name6=[A,B,C],name7=[C,B,A]]", builder.toString());
+		Map<String, String> map = new HashMap<>();
+		map.put("key1", "value1");
+		builder.append("name8", map);
+		assertEquals("ToStringBuilderTest[name1=null,name2=value2,name3=3,name4=4,name5=false,name6=[A,B,C],name7=[C,B,A],name8=[key1>value1]]", builder.toString());
+		assertThrows(IllegalArgumentException.class, () -> builder.append(null, "String1"));
 	}
 
 }
